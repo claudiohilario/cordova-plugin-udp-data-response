@@ -3,7 +3,7 @@ UdpDataResponse is a plugin that allows you to send udp message in a broadcast a
 
 ## Example usage
 ```js
-UdpDataResponsePlugin.GetUdpData(successCallback, errorCallback, mensageSender, serverPoer)
+UdpDataResponsePlugin.GetUdpData(successCallback, errorCallback, mensageSender, serverPort)
 ```
 
 ### Error Responses
