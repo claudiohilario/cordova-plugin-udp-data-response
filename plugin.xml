@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      id="pt.ontech.UdpDataResponsePlugin"
+      version="1.0.0">
+    <name>UdpDataResponsePlugin</name>
+    <description>UdpDataResponse is a plugin that allows you to send udp message in a broadcast and get a response.</description>
+
+    <js-module src="www/UdpDataResponsePlugin.js" name="UdpDataResponsePlugin">
+        <clobbers target="UdpDataResponsePlugin" />
+    </js-module>
+
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/UdpDataResponsePluginProxy.js" name="UdpDataResponsePluginProxy">
+            <merges target="" />
+        </js-module>
+        <framework src="src/windows/UdpDataResponse.winmd" custom="true"/>
+    </platform>
+
+</plugin>
