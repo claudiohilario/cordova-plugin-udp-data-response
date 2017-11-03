@@ -53,7 +53,7 @@ namespace UdpDataResponse
                 }
                 catch (Exception e)
                 {
-                    response = "PORT_OCCUPIED" + message + " - " + serverPort;
+                    response = "PORT_OCCUPIED";
                 }
 
 
